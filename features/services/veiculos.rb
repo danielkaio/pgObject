@@ -6,13 +6,25 @@ module Rest
     base_uri CONFIG['base_uri']
          
     def lista
-        self.class.get("/Vehicles?Page=1")
+        self.class.get("/Vehicles?Page=1")    
+   end
 
             
-      end
 
-    end
+
+
+
 end
+
+
+end
+
+
+
+    
+
+      
+
 
 
 

@@ -1,24 +1,22 @@
 Dado('que acesse a rota {string}') do |string|
- 
-@request = veiculos.lista
 
-
-  
-  end
+  @request = veiculos.lista
+ end
   
   Quando('a rota for acessada com sucesso') do
-
-  
+    expect(@request.code).to eq 200
   end
   
   Então('retorna {int} como response code') do |status|
-  
 
- 
-    
+    expect(@request.code).to eq 200
+    puts @request
   end
   
   Então('retorna o atributo {int}') do |int|
+      
+   pending
+
   
   end
   
