@@ -14,8 +14,12 @@ Dado('que acesse a rota {string}') do |string|
   end
   
   Então('retorna o atributo {int}') do |int|
+
+    @id = 1
+    @request.veiculos.pega_id(@id)
+    puts @request
       
-   pending
+
 
   
   end

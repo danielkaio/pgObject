@@ -10,6 +10,9 @@ module Rest
    end
 
             
+   def pega_id(id)
+    self.class.get("/Vehicles?Page=1/#{id}")    
+end
 
 
 
