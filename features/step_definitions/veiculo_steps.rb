@@ -1,6 +1,8 @@
 Dado('que acesse a rota {string}') do |string|
 
+
   @request = veiculos.lista
+  
  end
   
   Quando('a rota for acessada com sucesso') do
@@ -9,18 +11,16 @@ Dado('que acesse a rota {string}') do |string|
   
   Então('retorna {int} como response code') do |status|
 
-    expect(@request.code).to eq 200
-    puts @request
+    expect(@request.code).to eq status
+    
   end
   
   Então('retorna o atributo {int}') do |int|
+   
+      @request.parsed_response[:Model]
+      puts @request
 
-    @id = 1
-    @request.veiculos.pega_id(@id)
-    puts @request
-      
-
-
+     pending
   
   end
   

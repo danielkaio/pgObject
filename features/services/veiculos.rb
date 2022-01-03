@@ -2,17 +2,35 @@ module Rest
     class Veiculos
         include HTTParty
     
-    headers 'Content-type' => "application/json"
+    headers id:"id"
+   
     base_uri CONFIG['base_uri']
          
     def lista
-        self.class.get("/Vehicles?Page=1")    
+    return    self.class.get("/Vehicles?Page=1")    
    end
 
-            
-   def pega_id(id)
-    self.class.get("/Vehicles?Page=1/#{id}")    
+          
+   def lista
+    self.class.get("/Vehicles?Page=1")    
+
+    
 end
+
+
+
+
+
+   
+
+   def lista()
+    self.class.get("/Vehicles?Page=1")    
+end
+
+
+
+
+
 
 
 

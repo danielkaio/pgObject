@@ -1,8 +1,9 @@
 #language:pt
 
 
-Funcionalidade: Acessa GET informações dos veículos com sucesso
 
+Funcionalidade: Acessa GET informações dos veículos com sucesso
+@rota
 Cenario: acessar rota
 
 Dado que acesse a rota "/Vehicles?Page=1"
@@ -14,7 +15,7 @@ Exemplos:
 | code |
 |  200 |
 
-
+@detalhes
 Cenario: acessa informaçoes
 
 Dado que acesse a rota "/Vehicles?Page=1"
