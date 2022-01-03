@@ -7,38 +7,16 @@ module Rest
     base_uri CONFIG['base_uri']
          
     def lista
-    return    self.class.get("/Vehicles?Page=1")    
-   end
+    return    self.class.get("/Vehicles?Page=1") 
 
-          
-   def lista
-    self.class.get("/Vehicles?Page=1")    
+    end
+end
 
+end
     
-end
 
 
 
-
-
-   
-
-   def lista()
-    self.class.get("/Vehicles?Page=1")    
-end
-
-
-
-
-
-
-
-
-
-end
-
-
-end
 
 
 
