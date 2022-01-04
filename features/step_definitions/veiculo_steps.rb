@@ -3,6 +3,8 @@ Dado('que acesse a rota {string}') do |string|
 
   @request = veiculos.lista
   
+
+  
  end
   
   Quando('a rota for acessada com sucesso') do
@@ -17,46 +19,53 @@ Dado('que acesse a rota {string}') do |string|
   
   Então('retorna o atributo {int}') do |int|
    
-      @request.parsed_response[:Model]
-      puts @request
+      
+  @request = honda.id
+  
+  puts @request
 
-     pending
+    
   
   end
   
   Então('retorna o atributo <Name>') do
-    pending # Write code here that turns the phrase above into concrete actions
+    
   end
   
   Então('retorna o atributo Honda') do
-    pending # Write code here that turns the phrase above into concrete actions
+    @request = honda.make
+    puts @request
   end
   
   Então('retorna o atributo City') do
-    pending # Write code here that turns the phrase above into concrete actions
+    @request =  honda.model
+    puts @request
   end
   
   Então('retorna o atributo {float} EXL 4X4 16V GASOLINA 4P AUTOMÁTICO') do |float|
-    pending # Write code here that turns the phrase above into concrete actions
+    @request = honda.version
+
   end
   
   Então('retorna o atributo Mitsubishi') do
-    pending # Write code here that turns the phrase above into concrete actions
+  @request = mitsubishi.make
   end
   
   Então('retorna o atributo Lancer') do
-    pending # Write code here that turns the phrase above into concrete actions
+    @request = mitsubishi.model
   end
   
   Então('retorna o atributo {float} EVO 4P AUTOMÁTICO') do |float|
-    pending # Write code here that turns the phrase above into concrete actions
+    @request = mitsubishi.version
+    
   end
   
   Então('retorna o atributo Fit') do
-    pending # Write code here that turns the phrase above into concrete actions
+    @request = fit.model
+  
   end
   
   Então('retorna o atributo {float} LXL 16V FLEX 4P AUTOMÁTICO') do |float|
-    pending # Write code here that turns the phrase above into concrete actions
+  
   end
   
