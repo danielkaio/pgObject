@@ -22,10 +22,6 @@ Dado('que acesse a rota {string}') do |string|
       
   @request = honda.id
   
-  puts @request
-
-    
-  
   end
   
   Então('retorna o atributo <Name>') do
@@ -34,12 +30,11 @@ Dado('que acesse a rota {string}') do |string|
   
   Então('retorna o atributo Honda') do
     @request = honda.make
-    puts @request
+    
   end
   
   Então('retorna o atributo City') do
     @request =  honda.model
-    puts @request
   end
   
   Então('retorna o atributo {float} EXL 4X4 16V GASOLINA 4P AUTOMÁTICO') do |float|
